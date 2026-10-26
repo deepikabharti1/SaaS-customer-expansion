@@ -203,12 +203,11 @@ plt.ylabel('Number of Accounts')
 plt.savefig("avg_usage_by_upgrade.png", dpi=150, bbox_inches="tight")
 plt.show()
 
-## insights: Most accounts didn't upgrade,Only a smaller group upgraded.
-
+#boxplot
 sns.boxplot(data=model_data, x='upgrade_flag', y='avg_usage')
-
 plt.title('Average Usage by Upgrade Status')
 plt.xlabel('Upgrade Flag (0 = No, 1 = Yes)')
 plt.ylabel('Average Usage')
-
 plt.show()
+
+## insights: Most accounts didn't upgrade,Only a smaller group upgraded.
